@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/content_head_iv"
+                android:layout_width="match_parent"
+                android:background="@color/black"
+                android:layout_height="300dp"
+                android:clickable="true"/>
+
+            <ImageView
+                android:id="@+id/location_btn"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/selector_content_location"
+                android:layout_alignBottom="@+id/content_head_iv"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="-60dp"
+                android:clickable="true"/>
+
+            <ImageView
+                android:id="@+id/detail_btn"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/selector_content_detail"
+                android:layout_alignBottom="@+id/content_head_iv"
+                android:layout_marginBottom="-30dp"
+                android:layout_marginRight="50dp"
+                android:layout_toLeftOf="@id/location_btn"
+                android:clickable="true"/>
+
+            <TextView
+                android:id="@+id/place_btn"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/selector_content_places"
+                android:layout_alignBottom="@+id/content_head_iv"
+                android:text="景点"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="@color/green_login"
+                android:gravity="center"
+                android:layout_marginBottom="-30dp"
+                android:layout_marginLeft="50dp"
+                android:layout_toRightOf="@id/location_btn"
+                android:clickable="true"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/content_head_iv"
+                android:layout_marginTop="80dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="| 相关照片"
+                        android:textStyle="bold"
+                        android:textSize="13sp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginLeft="8dp"/>
+
+                    <TextView
+                        android:id="@+id/more_pic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="更多"
+                        android:gravity="right|"
+                        android:layout_marginTop="8dp"
+                        android:textColor="@color/green_login_bg"
+                        android:textSize="13sp"
+                        android:layout_marginRight="8dp"
+                        android:clickable="true"/>
+                </LinearLayout>
+                <org.selftravel.view.DetailGradView
+                    android:id="@+id/content_pic_gv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:horizontalSpacing="8dp"
+                    android:verticalSpacing="8dp"
+                    android:layout_margin="8dp"
+                    android:numColumns="2"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="| 风景评论"
+                        android:textStyle="bold"
+                        android:textSize="13sp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginLeft="8dp"/>
+
+                    <TextView
+                        android:id="@+id/more_msg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="更多"
+                        android:gravity="right|"
+                        android:layout_marginTop="8dp"
+                        android:textColor="@color/green_login_bg"
+                        android:textSize="13sp"
+                        android:layout_marginRight="8dp"
+                        android:clickable="true"/>
+                </LinearLayout>
+
+                <org.selftravel.view.DetailListView
+                    android:id="@+id/content_msg_lv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/touming">
+
+        <ImageView
+            android:padding="8dp"
+            android:id="@+id/content_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/selector_detail_back"/>
+
+        <TextView
+            android:id="@+id/content_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="name"
+            android:textColor="@color/white"
+            android:layout_centerInParent="true"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="11dp"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:id="@+id/been_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_go"
+                android:clickable="true"/>
+
+            <TextView
+                android:id="@+id/been_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="40dp"
+            android:orientation="vertical"
+            android:layout_marginTop="11dp"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:id="@+id/likes_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_likes"
+                android:clickable="true"/>
+
+            <TextView
+                android:id="@+id/like_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</RelativeLayout>

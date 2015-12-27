@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <org.selftravel.view.TitleBar
+        android:id="@+id/more_msg_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+
+    <RelativeLayout
+        android:id="@+id/et_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="3dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/send_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_send_btn"
+            android:paddingRight="4dp"
+            android:paddingLeft="4dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:text="发送"
+            android:textColor="@color/white"
+            android:layout_alignParentRight="true"/>
+        <EditText
+            android:id="@+id/msg_et"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_toLeftOf="@id/send_btn"
+            android:paddingLeft="8dp"
+            android:hint="说两句吧"/>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/more_msg_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/more_msg_title"
+        android:layout_above="@id/et_box"/>
+
+</RelativeLayout>

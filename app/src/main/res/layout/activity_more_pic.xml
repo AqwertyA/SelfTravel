@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <org.selftravel.view.TitleBar
+        android:id="@+id/more_pic_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshGridView
+        android:id="@+id/more_pic_gv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="2"/>
+</LinearLayout>

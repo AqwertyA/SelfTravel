@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">SelfTravel</string>
+    <string name="home">首页</string>
+    <string name="destination">目的地</string>
+    <string name="find">发现</string>
+    <string name="search">搜索</string>
+    <string name="mine">我的</string>
+    <string name="register">注册</string>
+    <string name="username_hint">邮箱或者手机号</string>
+    <string name="error_hint_login">用户名格式不正确。请输入邮箱或者手机号</string>
+    <string name="login">登录</string>
+    <string name="forget_password">忘记密码？</string>
+    <string name="about">关于大幅度发生地方下次来看V中；电话发来房间；啊是看得见；是的女啊算了</string>
+    <string name="new_pwd_hint">输入新密码</string>
+    <string name="pwd_confirm">确认新密码</string>
+    <string name="please_input_pwd">请输入密码</string>
+    <string name="agree_treaty">同意自游旅行网用户协议</string>
+    <string name="commit">提交</string>
+    <string name="old_pwd_hint">输入旧密码</string>
+    <string name="done">确认</string>
+    <string name="nodata">无数据</string>
+    <string name="surpass">超越了10%的旅行者</string>
+</resources>

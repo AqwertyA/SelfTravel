@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.selftravel">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+     
+
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+
+    <application
+        android:name=".app.SelfTravelApp"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="b28b53018e1fae87c6e4e9ee7733b848" />
+        <activity android:name=".activity.MainActivity"
+            android:windowSoftInputMode="stateHidden|adjustPan"/>
+        <activity android:name=".activity.WebViewActivity" />
+        <activity android:name=".activity.SettingsActivity" />
+        <activity android:name=".activity.LoginActivity" />
+        <activity android:name=".activity.AboutActivity" />
+        <activity android:name=".activity.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.AlbumActivity" />
+        <activity android:name=".activity.AttentionActivity" />
+        <activity android:name=".activity.FootPrintActivity" />
+        <activity android:name=".activity.LikeActivity" />
+        <activity android:name=".activity.MessageActivity" />
+        <activity android:name=".activity.VoiceActivity" />
+        <activity android:name=".activity.RegisterActivity" />
+        <activity android:name=".activity.MyInfoActivity"/>
+        <activity android:name=".activity.ContentActivity"/>
+        <activity android:name=".activity.DetailPicActivity"/>
+        <activity android:name=".activity.PlaceActivity"/>
+        <activity android:name=".activity.MorePicActivity"/>
+        <activity android:name=".activity.PositionActivity"/>
+        <activity android:name=".activity.SearchAcitivity"/>
+        <service android:name="com.amap.api.location.APSService" >
+        </service>
+        <activity android:name=".activity.MorePicDetailActivity"/>
+        <activity android:name=".activity.MoreMsgActivity"/>
+    </application>
+
+</manifest>
